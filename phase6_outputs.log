@@ -1,0 +1,38 @@
+2026-06-08 23:54:25,657 | INFO | Operation DataShield — Phase 6: Output Generation starting
+2026-06-08 23:54:25,657 | INFO | Batch ID: DS-20260608-2354
+2026-06-08 23:54:25,657 | INFO | Run timestamp: 2026-06-08 23:54:25
+2026-06-08 23:54:25,658 | INFO | Loading processed.notification_ready...
+2026-06-08 23:54:26,625 | INFO |   Loaded 14,486 records
+2026-06-08 23:54:26,698 | INFO | Generating PrintCo mail file...
+2026-06-08 23:54:26,752 | INFO |   Mail-eligible records: 14,326
+2026-06-08 23:54:28,516 | INFO |   Rows written: 14,326
+2026-06-08 23:54:28,527 | INFO | Generating email vendor file...
+2026-06-08 23:54:28,547 | INFO |   Email-eligible records: 11,718
+2026-06-08 23:54:30,042 | INFO |   Records written: 11,718
+2026-06-08 23:54:30,058 | INFO | Generating call center dialer file...
+2026-06-08 23:54:30,094 | INFO |   Call-eligible records: 14,484
+2026-06-08 23:54:31,743 | INFO |   Rows written: 14,484
+2026-06-08 23:54:31,759 | INFO | Generating credit monitoring file...
+2026-06-08 23:54:31,796 | INFO |   Credit monitoring eligible: 14,484
+2026-06-08 23:54:33,279 | INFO |   Rows written: 14,484
+2026-06-08 23:54:33,292 | INFO | Generating manifest file...
+2026-06-08 23:54:33,296 | INFO |   printco_mail.csv: 14,326 rows | 1,075,137 bytes | MD5: 041dd3f6d8fba41b05dbb6b3e7205202
+2026-06-08 23:54:33,307 | INFO |   sendgrid_email.json: 11,718 rows | 2,887,047 bytes | MD5: 0a9efc213208c509ce30ddc3abcc53aa
+2026-06-08 23:54:33,310 | INFO |   callcenter_dialer.txt: 14,484 rows | 788,811 bytes | MD5: b0b1fc4dbf912b2be728f7888e769137
+2026-06-08 23:54:33,313 | INFO |   creditmon_enroll.csv: 14,484 rows | 817,773 bytes | MD5: b9dae47e1dc312468021e95a9943df2e
+2026-06-08 23:54:33,313 | INFO |   Manifest written: output/manifest.csv
+2026-06-08 23:54:33,314 | INFO | 
+2026-06-08 23:54:33,314 | INFO | ============================================================
+2026-06-08 23:54:33,314 | INFO | PHASE 6 OUTPUT SUMMARY
+2026-06-08 23:54:33,314 | INFO | ============================================================
+2026-06-08 23:54:33,314 | INFO |   Batch ID:              DS-20260608-2354
+2026-06-08 23:54:33,314 | INFO |   File                                 Records
+2026-06-08 23:54:33,314 | INFO |   ---------------------------------------------
+2026-06-08 23:54:33,314 | INFO |   printco_mail.csv                      14,326
+2026-06-08 23:54:33,315 | INFO |   sendgrid_email.json                   11,718
+2026-06-08 23:54:33,315 | INFO |   callcenter_dialer.txt                 14,484
+2026-06-08 23:54:33,315 | INFO |   creditmon_enroll.csv                  14,484
+2026-06-08 23:54:33,316 | INFO |   ---------------------------------------------
+2026-06-08 23:54:33,316 | INFO |   Output folder: /Users/sharnya/Downloads/Project newww/output
+2026-06-08 23:54:33,316 | INFO | ============================================================
+2026-06-08 23:54:33,316 | INFO | All vendor files generated. Proceed to Phase 7.

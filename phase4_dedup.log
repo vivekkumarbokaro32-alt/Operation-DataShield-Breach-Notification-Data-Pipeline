@@ -1,0 +1,36 @@
+2026-06-08 18:03:31,944 | INFO | Operation DataShield — Phase 4: Deduplication starting
+2026-06-08 18:03:31,944 | INFO | Run timestamp: 2026-06-08 18:03:31
+2026-06-08 18:03:31,944 | INFO | Loading staging.normalized...
+2026-06-08 18:03:32,556 | INFO |   Loaded 21,500 rows
+2026-06-08 18:03:32,558 | INFO | Pass 1: Exact dedup on email...
+2026-06-08 18:03:32,599 | INFO |   Records with email:    17,020
+2026-06-08 18:03:32,600 | INFO |   Records without email: 4,480
+2026-06-08 18:03:32,707 | INFO |   Before: 21,500 | After: 19,493 | Removed: 2,007
+2026-06-08 18:03:32,727 | INFO | Pass 2: Exact dedup on phone...
+2026-06-08 18:03:32,764 | INFO |   Records with phone:    19,490
+2026-06-08 18:03:32,764 | INFO |   Records without phone: 3
+2026-06-08 18:03:32,893 | INFO |   Before: 19,493 | After: 18,822 | Removed: 671
+2026-06-08 18:03:32,903 | INFO | Pass 3: Fuzzy dedup (threshold=85)...
+2026-06-08 18:03:32,903 | INFO |   Building Soundex blocks...
+2026-06-08 18:03:33,060 | INFO |   Total Soundex blocks: 29
+2026-06-08 18:21:49,214 | INFO |   Candidate duplicate pairs found: 4,314
+2026-06-08 18:21:49,216 | INFO |   Records to remove: 4,314
+2026-06-08 18:21:49,281 | INFO |   Before: 18,822 | After: 14,508 | Removed: 4,314
+2026-06-08 18:21:49,318 | INFO | Writing staging.deduped...
+2026-06-08 18:22:03,629 | INFO |   Fuzzy pairs saved to staging.fuzzy_pairs_review
+2026-06-08 18:22:03,635 | INFO | 
+2026-06-08 18:22:03,635 | INFO | ============================================================
+2026-06-08 18:22:03,635 | INFO | PHASE 4 DEDUPLICATION SUMMARY
+2026-06-08 18:22:03,635 | INFO | ============================================================
+2026-06-08 18:22:03,635 | INFO |   Original records:          21,500
+2026-06-08 18:22:03,636 | INFO |   After Pass 1 (email):      19,493  (-2,007)
+2026-06-08 18:22:03,636 | INFO |   After Pass 2 (phone):      18,822  (-671)
+2026-06-08 18:22:03,636 | INFO |   After Pass 3 (fuzzy):      14,508  (-4,314)
+2026-06-08 18:22:03,636 | INFO |   ─────────────────────────────────────
+2026-06-08 18:22:03,636 | INFO |   Total removed:             6,992
+2026-06-08 18:22:03,636 | INFO |   Total reduction:           32.5%
+2026-06-08 18:22:03,636 | INFO |   Unique individuals:        14,508
+2026-06-08 18:22:03,636 | INFO | ============================================================
+2026-06-08 18:22:03,636 | INFO |   DB count verified: 14,508
+2026-06-08 18:22:03,636 | INFO |   Count match: ✓ YES
+2026-06-08 18:22:03,636 | INFO | staging.deduped is ready. Proceed to Phase 5.

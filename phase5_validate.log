@@ -1,0 +1,46 @@
+2026-06-08 23:45:37,114 | INFO | Operation DataShield — Phase 5: Validation starting
+2026-06-08 23:45:37,119 | INFO | Run timestamp: 2026-06-08 23:45:37
+2026-06-08 23:45:37,120 | INFO | Loading staging.deduped...
+2026-06-08 23:45:38,768 | INFO |   Loaded 14,508 rows
+2026-06-08 23:45:38,796 | INFO | Running email validation...
+2026-06-08 23:45:39,057 | INFO | Running phone validation...
+2026-06-08 23:45:39,297 | INFO | Running address validation...
+2026-06-08 23:45:41,113 | INFO | Classifying notification channels...
+2026-06-08 23:45:41,517 | INFO |   Notification ready: 14,486
+2026-06-08 23:45:41,517 | INFO |   Exceptions (NO_CONTACT): 22
+2026-06-08 23:45:41,520 | INFO | Writing processed.notification_ready...
+2026-06-08 23:46:00,573 | INFO | Writing processed.exceptions...
+2026-06-08 23:46:00,751 | INFO | 
+2026-06-08 23:46:00,751 | INFO | ============================================================
+2026-06-08 23:46:00,753 | INFO | PHASE 5 VALIDATION SUMMARY
+2026-06-08 23:46:00,754 | INFO | ============================================================
+2026-06-08 23:46:00,755 | INFO |   Total deduped records:     14,508
+2026-06-08 23:46:00,756 | INFO |   Notification ready:        14,486
+2026-06-08 23:46:00,756 | INFO |   NO_CONTACT exceptions:     22
+2026-06-08 23:46:00,757 | INFO |   DB count verified:         14,486
+2026-06-08 23:46:00,758 | INFO |   Count match:               ✓ YES
+2026-06-08 23:46:00,759 | INFO | 
+2026-06-08 23:46:00,759 | INFO | CHANNEL BREAKDOWN:
+2026-06-08 23:46:00,760 | INFO |   Channel            Count     Pct
+2026-06-08 23:46:00,761 | INFO |   --------------------------------
+2026-06-08 23:46:00,762 | INFO |   BOTH              11,558   79.8%
+2026-06-08 23:46:00,763 | INFO |   MAIL_ONLY          2,768   19.1%
+2026-06-08 23:46:00,765 | INFO |   EMAIL_ONLY           160    1.1%
+2026-06-08 23:46:00,765 | INFO | 
+2026-06-08 23:46:00,766 | INFO | EMAIL VALIDATION BREAKDOWN:
+2026-06-08 23:46:00,773 | INFO |   OK                        11,718
+2026-06-08 23:46:00,773 | INFO |   MISSING                    2,789
+2026-06-08 23:46:00,773 | INFO |   FAKE_EMAIL                     1
+2026-06-08 23:46:00,775 | INFO | 
+2026-06-08 23:46:00,775 | INFO | ADDRESS VALIDATION BREAKDOWN:
+2026-06-08 23:46:00,785 | INFO |   OK                        14,326
+2026-06-08 23:46:00,787 | INFO |   INVALID_STATE                182
+2026-06-08 23:46:00,787 | INFO | 
+2026-06-08 23:46:00,790 | INFO | EXCEPTION BREAKDOWN:
+2026-06-08 23:46:00,809 | INFO |         Exception Type  Count  Pct of Exceptions
+        EMAIL: MISSING   2789               19.2
+ADDRESS: INVALID_STATE    182                1.3
+        PHONE: MISSING      2                0.0
+     EMAIL: FAKE_EMAIL      1                0.0
+2026-06-08 23:46:00,809 | INFO | ============================================================
+2026-06-08 23:46:00,810 | INFO | processed.notification_ready is ready. Proceed to Phase 6.

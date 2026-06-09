@@ -1,0 +1,90 @@
+2026-06-08 11:59:15,620 | ERROR | Could not connect to database: (psycopg2.OperationalError) could not translate host name "827009@localhost" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2026-06-08 12:01:29,693 | ERROR | Could not connect to database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "datashield" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2026-06-08 12:06:52,059 | ERROR | Could not connect to database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "Datashield" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2026-06-08 12:08:30,165 | INFO | Database connection successful.
+2026-06-08 12:08:30,173 | INFO | Operation DataShield — Phase 1: Ingestion starting
+2026-06-08 12:08:30,173 | INFO | Run timestamp: 2026-06-08 12:08:30
+2026-06-08 12:08:30,173 | INFO | ==================================================
+2026-06-08 12:08:30,173 | INFO | Starting ingestion: vendor_a
+2026-06-08 12:08:30,173 | INFO | File: vendor_a_raw.csv
+2026-06-08 12:08:31,784 | INFO |   Chunk 001: 2,000 rows written | Running total: 2,000
+2026-06-08 12:08:33,287 | INFO |   Chunk 002: 2,000 rows written | Running total: 4,000
+2026-06-08 12:08:34,708 | INFO |   Chunk 003: 2,000 rows written | Running total: 6,000
+2026-06-08 12:08:36,205 | INFO |   Chunk 004: 2,000 rows written | Running total: 8,000
+2026-06-08 12:08:36,205 | INFO | Ingestion complete: vendor_a — 8,000 total rows loaded
+2026-06-08 12:08:36,206 | INFO | ==================================================
+2026-06-08 12:08:36,207 | INFO | Starting ingestion: vendor_b
+2026-06-08 12:08:36,207 | INFO | File: vendor_b_raw.csv
+2026-06-08 12:08:36,207 | ERROR | Ingestion FAILED for vendor_b: 'skipfooter' not supported for iteration
+2026-06-08 12:08:36,207 | INFO | ==================================================
+2026-06-08 12:08:36,207 | INFO | Starting ingestion: vendor_c
+2026-06-08 12:08:36,208 | INFO | File: vendor_c_raw.csv
+2026-06-08 12:08:38,037 | INFO |   Chunk 001: 2,000 rows written | Running total: 2,000
+2026-06-08 12:08:39,963 | INFO |   Chunk 002: 2,000 rows written | Running total: 4,000
+2026-06-08 12:08:41,752 | INFO |   Chunk 003: 2,000 rows written | Running total: 6,000
+2026-06-08 12:08:41,752 | INFO | Ingestion complete: vendor_c — 6,000 total rows loaded
+2026-06-08 12:08:41,753 | INFO | 
+2026-06-08 12:08:41,753 | INFO | ============================================================
+2026-06-08 12:08:41,753 | INFO | PHASE 1 INGESTION SUMMARY
+2026-06-08 12:08:41,753 | INFO | ============================================================
+2026-06-08 12:08:41,753 | INFO | Vendor       Status      Rows Loaded   DB Count   Match?
+2026-06-08 12:08:41,754 | INFO | ------------------------------------------------------------
+2026-06-08 12:08:41,762 | INFO | vendor_a     SUCCESS           8,000      8,000    ✓ YES
+2026-06-08 12:08:41,763 | INFO | vendor_b     FAILED              ---        ---      ---
+2026-06-08 12:08:41,766 | INFO | vendor_c     SUCCESS           6,000      6,000    ✓ YES
+2026-06-08 12:08:41,766 | INFO | ------------------------------------------------------------
+2026-06-08 12:08:41,766 | INFO | TOTAL                         14,000
+2026-06-08 12:08:41,766 | INFO | ============================================================
+2026-06-08 12:08:41,766 | WARNING | One or more vendors had issues. Review log before proceeding.
+2026-06-08 12:08:41,767 | INFO | Phase 1 complete. Check phase1_ingestion.log for full details.
+2026-06-08 12:18:23,934 | ERROR | Could not connect to database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "Datasheld" does not exist
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2026-06-08 12:19:24,156 | INFO | Database connection successful.
+2026-06-08 12:19:24,157 | INFO | Operation DataShield — Phase 1: Ingestion starting
+2026-06-08 12:19:24,157 | INFO | Run timestamp: 2026-06-08 12:19:24
+2026-06-08 12:19:24,158 | INFO | ==================================================
+2026-06-08 12:19:24,158 | INFO | Starting ingestion: vendor_a
+2026-06-08 12:19:24,158 | INFO | File: vendor_a_raw.csv
+2026-06-08 12:19:25,916 | INFO |   Chunk 001: 2,000 rows written | Running total: 2,000
+2026-06-08 12:19:27,419 | INFO |   Chunk 002: 2,000 rows written | Running total: 4,000
+2026-06-08 12:19:29,063 | INFO |   Chunk 003: 2,000 rows written | Running total: 6,000
+2026-06-08 12:19:30,635 | INFO |   Chunk 004: 2,000 rows written | Running total: 8,000
+2026-06-08 12:19:30,635 | INFO | Ingestion complete: vendor_a — 8,000 total rows loaded
+2026-06-08 12:19:30,636 | INFO | ==================================================
+2026-06-08 12:19:30,636 | INFO | Starting ingestion: vendor_b
+2026-06-08 12:19:30,636 | INFO | File: vendor_b_raw.csv
+2026-06-08 12:19:30,636 | INFO |   Footer rows detected (3) — using full-read method
+2026-06-08 12:19:32,267 | INFO |   Chunk 001: 2,000 rows written | Running total: 2,000
+2026-06-08 12:19:33,777 | INFO |   Chunk 002: 2,000 rows written | Running total: 4,000
+2026-06-08 12:19:35,235 | INFO |   Chunk 003: 2,000 rows written | Running total: 6,000
+2026-06-08 12:19:36,332 | INFO |   Chunk 004: 1,500 rows written | Running total: 7,500
+2026-06-08 12:19:36,332 | INFO | Ingestion complete: vendor_b — 7,500 total rows loaded
+2026-06-08 12:19:36,334 | INFO | ==================================================
+2026-06-08 12:19:36,335 | INFO | Starting ingestion: vendor_c
+2026-06-08 12:19:36,335 | INFO | File: vendor_c_raw.csv
+2026-06-08 12:19:38,339 | INFO |   Chunk 001: 2,000 rows written | Running total: 2,000
+2026-06-08 12:19:40,227 | INFO |   Chunk 002: 2,000 rows written | Running total: 4,000
+2026-06-08 12:19:42,087 | INFO |   Chunk 003: 2,000 rows written | Running total: 6,000
+2026-06-08 12:19:42,088 | INFO | Ingestion complete: vendor_c — 6,000 total rows loaded
+2026-06-08 12:19:42,089 | INFO | 
+2026-06-08 12:19:42,089 | INFO | ============================================================
+2026-06-08 12:19:42,089 | INFO | PHASE 1 INGESTION SUMMARY
+2026-06-08 12:19:42,089 | INFO | ============================================================
+2026-06-08 12:19:42,089 | INFO | Vendor       Status      Rows Loaded   DB Count   Match?
+2026-06-08 12:19:42,089 | INFO | ------------------------------------------------------------
+2026-06-08 12:19:42,092 | INFO | vendor_a     SUCCESS           8,000      8,000    ✓ YES
+2026-06-08 12:19:42,095 | INFO | vendor_b     SUCCESS           7,500      7,500    ✓ YES
+2026-06-08 12:19:42,102 | INFO | vendor_c     SUCCESS           6,000      6,000    ✓ YES
+2026-06-08 12:19:42,103 | INFO | ------------------------------------------------------------
+2026-06-08 12:19:42,103 | INFO | TOTAL                         21,500
+2026-06-08 12:19:42,103 | INFO | ============================================================
+2026-06-08 12:19:42,103 | INFO | All vendors loaded and verified successfully.
+2026-06-08 12:19:42,103 | INFO | Raw schema is ready. Proceed to Phase 2.
+2026-06-08 12:19:42,103 | INFO | Phase 1 complete. Check phase1_ingestion.log for full details.
